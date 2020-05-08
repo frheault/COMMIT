@@ -1,7 +1,9 @@
-from distutils.core import setup, Extension
+from setuptools import setup
+from setuptools.extension import Extension
 from Cython.Distutils import build_ext
 from Cython.Build import cythonize
 import numpy
+
 
 # Cython extension to create the sparse data structure from a tractogram
 # for the computation of matrix-vector multiplications
