@@ -11,6 +11,7 @@ ext1 = Extension(
     include_dirs=[numpy.get_include()],
     extra_compile_args=['-w'],
     extra_link_args=[],
+    install_requires=['setuptools', 'cython'],
     language='c++',
 )
 
@@ -20,6 +21,7 @@ ext2 = Extension(
     include_dirs=[numpy.get_include()],
     extra_compile_args=['-w'],
     extra_link_args=[],
+    install_requires=['setuptools', 'cython'],
     language='c++',
 )
 
@@ -29,6 +31,7 @@ ext3 = Extension(
     include_dirs=[numpy.get_include()],
     extra_compile_args=['-w'],
     extra_link_args=[],
+    install_requires=['setuptools', 'cython'],
     language='c++',
 )
 
