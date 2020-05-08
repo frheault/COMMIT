@@ -9,3 +9,6 @@ ehthumbs.db
 Thumbs.db
 __pycache__/
 .vscode/
+commit.egg*
+*.cpp
+*.so
