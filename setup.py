@@ -13,7 +13,7 @@ ext1 = Extension(
     include_dirs=[numpy.get_include()],
     extra_compile_args=['-w'],
     extra_link_args=[],
-    install_requires=['setuptools', 'cython'],
+    install_requires=['setuptools', 'Cython'],
     language='c++',
 )
 
@@ -23,7 +23,7 @@ ext2 = Extension(
     include_dirs=[numpy.get_include()],
     extra_compile_args=['-w'],
     extra_link_args=[],
-    install_requires=['setuptools', 'cython'],
+    install_requires=['setuptools', 'Cython'],
     language='c++',
 )
 
@@ -33,7 +33,7 @@ ext3 = Extension(
     include_dirs=[numpy.get_include()],
     extra_compile_args=['-w'],
     extra_link_args=[],
-    install_requires=['setuptools', 'cython'],
+    install_requires=['setuptools', 'Cython'],
     language='c++',
 )
 
@@ -47,7 +47,7 @@ setup(
     cmdclass = {'build_ext':build_ext},
     ext_modules = [ ext1, ext2, ext3 ],
     packages=['commit','commit.operator'],
-    install_requires=['setuptools', 'dipy', 'cython', 'amico'],
+    install_requires=['setuptools', 'dipy', 'Cython', 'amico'],
     package_data={
         'commit.operator':["*.*"], # needed by pyximport to compile at runtime
     },
