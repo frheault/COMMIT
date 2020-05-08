@@ -42,7 +42,7 @@ setup(
     cmdclass = {'build_ext':build_ext},
     ext_modules = [ ext1, ext2, ext3 ],
     packages=['commit','commit.operator'],
-    install_requires=['dipy', 'cython', 'amico'],
+    install_requires=['setuptools', 'dipy', 'cython', 'amico'],
     package_data={
         'commit.operator':["*.*"], # needed by pyximport to compile at runtime
     },
